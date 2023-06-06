@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+  background-image: url("../images/DecanatoFNI.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+}
+
+#mapa {
+  height: 80vh;
+  width: 98%;
+  margin: 10px;
+}
+
+h2{
+  /*color: #091d55;*/
+  color: rgb(17, 2, 48);
+ 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  text-shadow: -2px 2px 4px 
+  rgba(0, 0, 0, 0.5), 
+  2px -2px 0 
+  rgba(255, 255, 255, 0.9);
+
+}
+label {
+  /*color: #091d55;*/
+  color: white;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-shadow: -2px 2px 4px 
+  rgba(0, 0, 0, 0.5), 
+  2px -2px 0 
+  rgba(8, 5, 54, 0.9);
+}
+/*ICONO BUSCAR*/
+
+
+/* The side navigation menu */
+.bg{
+background-color:#022347 ;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #d4d8e4;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #e0e3e9;
+  color: rgb(250, 249, 249);
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color:#edeff3;
+  color: rgb(32, 30, 30);
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #e4e9ee;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
